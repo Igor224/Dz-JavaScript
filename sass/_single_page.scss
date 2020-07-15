@@ -1,0 +1,236 @@
+.single-page {
+    margin: 0 auto;
+}
+
+.slider-singlPg {
+    background-color: #f7f7f7;
+    border: 1.0px solid #eaeaea;
+    position: relative;
+
+    &__slid {
+        text-align: center;
+    }
+
+    &__prev,
+    &__next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 47px;
+        height: 47px;
+        margin-top: -22px;
+        padding: 16px;
+        font-size: 24px;
+        line-height: 14px;
+        font-weight: 400;
+        color: #ffffff;
+        background-color: rgba(42, 42, 42, 0.14);
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+
+    &__next {
+        right: 0;
+    }
+}
+
+.single-page__productInfo {
+    margin: 0 auto;
+    margin-top: -59px;
+}
+
+.productCart {
+    max-width: 1141px;
+    min-height: 730px;
+    opacity: .99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.0px solid #eaeaea;
+    text-align: center;
+    background-image: url(img/background_singlpg.png);
+
+    .productInfo-content {
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+
+        &__hr {
+            width: 63px;
+            height: 4px;
+            background-color: #ef5b70;
+            margin-top: -2px;
+            border: 0 none;
+        }
+    }
+
+    &__p {
+        margin-top: 73px;
+        padding-bottom: 14px;
+    }
+
+    &__p_red {
+        color: #f16d7f;
+        border-bottom: 1px solid;
+    }
+
+    &__h3 {
+        font-family: Lato;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #4d4d4d;
+    }
+
+    &__h3_position {
+        margin-top: 17px;
+    }
+
+    &__p_normal {
+        font-weight: 300;
+        color: #5e5e5e;
+        max-width: 693px;
+    }
+
+    &__p_light {
+        color: #b9b9b9;
+    }
+
+    &__span_bold {
+        color: #2f2f2f;
+    }
+
+    .prodInfo-mater-disign {
+        display: inline-flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 334px;
+        width: 100%;
+    }
+
+    &__prise {
+        padding: 50px 0 43px 0;
+        border-bottom: 1.0px solid $sait_color;
+        max-width: 642px;
+        width: 100%
+    }
+
+    .productPrise {
+        font-family: Lato;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 700;
+        color: $sait_color;
+    }
+}
+
+.productCart-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 63px;
+    width: 100%;
+    max-width: 537px;
+    text-align: start;
+
+    &__div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 700;
+        color: #2f2f2f;
+    }
+
+    &__button {
+        margin-top: 28px;
+        flex-basis: 537px;
+    }
+
+    &__select {
+        padding-left: 14px;
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #bcbcbc;
+        width: 144px;
+        height: 35px;
+        background-color: #ffffff;
+        border: 1.0px solid #eaeaea;
+    }
+
+    &__input {
+        width: 144px;
+        height: 35px;
+        background-color: #ffffff;
+        border: 1.0px solid #eaeaea;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #bcbcbc;
+        padding-left: 14px;
+    }
+
+    &__select,
+    &__input {
+        margin-top: 14px;
+    }
+}
+
+.button-mainType__svg {
+    width: 26px;
+    height: 24px;
+    vertical-align: -3px;
+}
+
+.button-mainType__path {
+    fill: #ffffff;
+}
+
+.productFromidex {
+    margin-top: 119px;
+
+    &__p {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+.productFromidex-capital {
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+}
+
+.mangoItems__img_padding1 {
+    background-image: url(img/rectangle_grey.png);
+    padding-left: 85px;
+    padding-right: 83px;
+    padding-top: 7px;
+}
+
+.mangoItems__img_padding2 {
+    background-image: url(img/rectangle_grey.png);
+    padding-left: 78px;
+    padding-right: 79px;
+}
+
+.mangoItems__img_padding3 {
+    background-image: url(img/rectangle_grey.png);
+    padding-left: 87px;
+    padding-right: 88px;
+    padding-top: 10px;
+}

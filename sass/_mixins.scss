@@ -1,0 +1,21 @@
+@mixin transition($prop, $sec) {
+    -webkit-transition: $prop, $sec;
+    -ms-transition: $prop, $sec;
+    -moz-transition: $prop, $sec;
+    -o-transition: $prop, $sec;
+    transition: $prop, $sec;
+}
+
+@mixin animation-mixin($name, $from, $to) {
+    @keyframes #{$name} {
+        0% {
+            transform: translate3d($from, 0, 0);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translate3d($to, 0, 0);
+            opacity: 1;
+        }
+    }
+}

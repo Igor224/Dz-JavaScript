@@ -1,0 +1,151 @@
+.checkout {
+    margin-top: 58px;
+}
+
+.checkout-details {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 31px;
+    padding-top: 31px;
+    border-radius: 0;
+}
+
+.checkout-details:hover .checkout-details__summary {
+    font-weight: 800;
+}
+
+.checkout-details__summary {
+    padding: 0;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    cursor: pointer;
+}
+
+.checkout-details__summary::after {
+    display: none;
+}
+
+.checkout-section {
+    display: none;
+    margin-top: 39px;
+    margin-bottom: 79px;
+}
+
+.checkout-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 390px;
+    max-width: 981px;
+    margin-left: 41px;
+}
+
+.checkout-legend {
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.checkout-form__p {
+    margin-top: 15px;
+}
+
+.checkout-form__p_lowercase {
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #b3b2b2;
+}
+
+.fieldset-label {
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    display: block;
+}
+
+.fieldset-left__label {
+    margin-top: 20px;
+}
+
+.fieldset-left__input {
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.input-radio {
+    width: 14px;
+    height: 14px;
+    background-color: #ffffff;
+    border: 2.0px solid #555555;
+}
+
+.checkout-form__p_upper {
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.fieldset-left__div {
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+
+.fieldset-right__div {
+    margin-top: 35px;
+}
+
+.fieldset-right__label {
+    margin-top: 23px;
+}
+
+.fieldset-right__span {
+    font-size: 17px;
+    color: #ff0d0d;
+}
+
+.fieldset-right__input {
+    width: 390px;
+    margin-top: 16px;
+}
+
+.checkout-form__p_red {
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ff0d0d;
+}
+
+.fieldset-right__button {
+    margin-right: 32px;
+}
+
+.fieldset-right__a {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #222222;
+}
+
+.fieldset-right__a:hover {
+    color: $sait_color;
+}
+
+.checkout-details[open] .checkout-section {
+    display: block;
+}

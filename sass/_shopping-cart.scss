@@ -1,0 +1,252 @@
+.shoppingCart {
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1.0px solid #222;
+        padding: 25px 0;
+    }
+
+    &__row_capital {
+        padding: 20px 0;
+    }
+
+    &__column {
+        text-align: end;
+    }
+
+    &__column_large {
+        text-align: start;
+        flex-basis: 317px;
+    }
+
+    &__column_text-normal {
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #656565;
+    }
+
+    &__column_text-bold {
+        font-family: Lato;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -0.015em;
+        color: #222222;
+    }
+
+    &__column_text-light {
+        font-weight: 300;
+        color: #6f6e6e;
+    }
+
+    &__Item {
+        float: left;
+        margin-right: 21px;
+    }
+
+    &__Item-contentWrap {
+        margin-top: 13px;
+    }
+
+    &__content {
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: #222222;
+    }
+
+    &__column_padding {
+        padding-bottom: 26px;
+    }
+
+    &__input {
+        width: 54px;
+        height: 30px;
+        text-align: center;
+        background-color: #ffffff;
+        border: 1.0px solid #eaeaea;
+    }
+
+    &__cansel {
+        display: inline-block;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #c0c0c0;
+
+        &:hover {
+            color: $sait_color;
+        }
+    }
+
+    &__buttons {
+        margin-top: 44px;
+    }
+
+}
+
+.buttons-shopCart {
+    display: flex;
+    justify-content: space-between;
+
+    &__tipe {
+        cursor: pointer;
+        padding: 17px 39px 15px 39px;
+        background-color: #ffffff;
+        border: 1.0px solid #eaeaea;
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        border-radius: 3px;
+        @include transition(color, $sec);
+        @include transition(border, $sec);
+
+        &:hover {
+            border: 1px solid $sait_color;
+            background-color: #fff;
+            color: $sait_color;
+        }
+    }
+}
+
+.shopCart-shipping {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 63px;
+}
+
+.shopCart-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.shopCart-fieldset {
+
+    &__list {
+        margin-top: 20px;
+    }
+
+    &__legend {
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #222222;
+    }
+
+    &__label {
+        font-family: Lato;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #000000;
+    }
+
+    &__label_positon {
+        margin-bottom: 24px;
+    }
+
+    &__input {
+        width: 355px;
+        height: 45px;
+        background-color: #ffffff;
+        border: 1.0px solid #eaeaea;
+        padding-left: 15px;
+        cursor: pointer;
+    }
+
+    &__input_submit {
+        font-family: Lato;
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+        padding: 12px 14px 12px 15px;
+        width: auto;
+        height: auto;
+        @include transition(color, $sec);
+        @include transition(border, $sec);
+    }
+
+    &__input_submit:hover {
+        color: $sait_color;
+        border: 1.0px solid $sait_color;
+    }
+}
+
+.shopCart-shipping-button {
+    flex-grow: 2;
+    text-align: end;
+    margin-left: 36px;
+    padding-top: 26px;
+    padding-right: 42px;
+    background-color: #f5f3f3;
+    cursor: pointer;
+
+    &__p {
+        margin-top: 14px;
+    }
+
+    &__p_small {
+        font-family: Lato;
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #4a4a4a;
+    }
+
+    &__p_big {
+        font-family: Lato;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #222222;
+    }
+
+    &__checkout {
+        margin-top: 40px;
+    }
+}
+
+.button-mainType {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #f16d7f;
+    padding: 16px 42px;
+    @include transition(color, $sec);
+    @include transition(border, $sec);
+
+    &__path {
+        @include transition(fill, $sec);
+    }
+
+    &:hover {
+        border: 1px solid $sait_color;
+        background-color: #fff;
+        color: $sait_color;
+    }
+
+    &:hover .button-mainType__path {
+        fill: $sait_color;
+    }
+}
