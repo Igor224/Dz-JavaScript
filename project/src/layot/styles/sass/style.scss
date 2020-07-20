@@ -372,7 +372,7 @@ summary::after {
 
 .drop__a__supersale {
     display: inline-block;
-    background: url(img/supersale.png) center no-repeat;
+    background: url(../../../assets/img/supersale.png) center no-repeat;
     width: 255px;
     height: 118px;
     font-size: 22px;
@@ -454,7 +454,7 @@ summary::after {
 .promo {
     height: 614px;
     background-color: #e8e8e8;
-    background-image: url(img/promo-back.png);
+    background-image: url(../../../assets/img/promo-back.png);
     background-position: center -51px;
     background-repeat: no-repeat;
 }
@@ -497,7 +497,7 @@ summary::after {
 }
 
 .formen {
-    background-image: url(img/formen.png);
+    background-image: url(../../../assets/img/formen.png);
     width: 560px;
     height: 542px;
     margin-right: 20px;
@@ -506,7 +506,7 @@ summary::after {
 }
 
 .accesories {
-    background-image: url(img/accesories.png);
+    background-image: url(../../../assets/img/accesories.png);
     width: 560px;
     height: 261px;
     background-color: #dadad2;
@@ -517,7 +517,7 @@ summary::after {
 }
 
 .woven {
-    background-image: url(img/forwomen.png);
+    background-image: url(../../../assets/img/forwomen.png);
     width: 560px;
     height: 261px;
     background-color: #000000;
@@ -526,7 +526,7 @@ summary::after {
 }
 
 .frkids {
-    background-image: url(img/forkids.png);
+    background-image: url(../../../assets/img/forkids.png);
     width: 560px;
     height: 542px;
     background-color: #000000;
@@ -643,7 +643,7 @@ summary::after {
 
 .mangoItems__add:hover:before {
     content: "";
-    background: url(img/cartSmall.svg) no-repeat center;
+    background: url(../../../assets/img/cartSmall.svg) no-repeat center;
     width: 23px;
     height: 22px;
     position: absolute;
@@ -717,7 +717,7 @@ summary::after {
 }
 
 .offer__left {
-    background: url(img/offerEffect.png) center no-repeat, url(img/blackWinter.png) center no-repeat;
+    background: url(../../../assets/img/offerEffect.png) center no-repeat, url(../../../assets/img/blackWinter.png) center no-repeat;
     padding: 135px 429px 294px 39px;
 }
 
@@ -769,7 +769,7 @@ span {
 
 .offerDelliver_h4::before {
     content: "";
-    background-image: url(img/lory.svg);
+    background-image: url(../../../assets/img/lory.svg);
     background-size: contain;
     width: 45px;
     height: 32px;
@@ -780,7 +780,7 @@ span {
 
 .offerDiscount__h4::before {
     content: "";
-    background: url(img/offer.svg);
+    background: url(../../../assets/img/offer.svg);
     width: 40px;
     height: 40px;
     position: absolute;
@@ -790,7 +790,7 @@ span {
 
 .offerQuallity__h4::before {
     content: "";
-    background-image: url(img/crown.svg);
+    background-image: url(../../../assets/img/crown.svg);
     width: 47px;
     height: 35px;
     position: absolute;
@@ -800,7 +800,7 @@ span {
 
 /**/
 .subscribe__aside {
-    background: url(img/shadowSubscribe.png) center no-repeat, url(img/sea.png) center no-repeat;
+    background: url(../../../assets/img/shadowSubscribe.png) center no-repeat, url(../../../assets/img/sea.png) center no-repeat;
     display: flex;
     height: 438px;
     background-color: #f7f7f8;
@@ -833,7 +833,7 @@ span {
 
 .blockquote:before {
     content: "";
-    background-image: url(img/face.png);
+    background-image: url(../../../assets/img/face.png);
     background-size: contain;
     width: 83px;
     height: 83px;
@@ -1487,7 +1487,7 @@ fieldset {
 
 .deliverySalesQuality__article::before {
     content: "";
-    background-image: url(img/offer.svg);
+    background-image: url(../../../assets/img/offer.svg);
     background-size: contain;
     width: 40px;
     height: 42px;
@@ -1498,7 +1498,7 @@ fieldset {
 
 .deliverySalesQuality__article:first-child:before {
     content: "";
-    background-image: url(img/lory.svg);
+    background-image: url(../../../assets/img/lory.svg);
     background-size: contain;
     width: 43px;
     height: 32px;
@@ -1509,7 +1509,7 @@ fieldset {
 
 .deliverySalesQuality__article:last-child:before {
     content: "";
-    background-image: url(img/crown.svg);
+    background-image: url(../../../assets/img/crown.svg);
     background-size: contain;
     width: 45px;
     height: 32px;

@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../src/layot/styles/sass/style.css">
+    <link rel="stylesheet" href="../src/layot/styles/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header class="header center">
         <section class="header__left">
             <a href="index.html" class="logo">
-                <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="D">D</span>
+                <img class="logo__img" src="../src/assets/img/logo.png" alt="logo">BRAN<span class="D">D</span>
             </a>
             <form class="header__form">
                 <details class="browse">
@@ -46,19 +46,19 @@
                     </div>
                 </details>
                 <input type="text" class="textSearch__input" placeholder="Search for Item...">
-                <button class="searchbutton"><img src="img/search.png" alt="search"></button>
+                <button class="searchbutton"><img src="../src/assets/img/search.png" alt="search"></button>
             </form>
         </section>
         <section class="header__right">
             <div class="header-card">
                 <div class="header-card__quantity">2</div>
                 <a href="shopping-cart.html" class="header_card__a">
-                    <img class="header__cart" src="img/cart.png" alt="cart"></a>
+                    <img class="header__cart" src="../src/assets/img/cart.png" alt="cart"></a>
                 <div class="drop drop-bascket">
                     <div class="drop__col">
                         <ul class="drop__ul">
                             <li class="drop__li drop-bascket"><a href="#" class="drop__a drop__a_left"><img
-                                        src="img/blueTshirt.png" alt="Tshirt"></a>
+                                        src="../src/assets/img/blueTshirt.png" alt="Tshirt"></a>
                                 <div class="drop__div_middle">
                                     <h4 class="button__h4">Rebox Zane</h4>
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -71,8 +71,8 @@
                                 <a href="#" class="shoppingCart__cansel drop__a_right"><i class="fa fa-times-circle"
                                         aria-hidden="true"></i></a>
                             </li>
-                            <li class="drop__li"><a href="#" class="drop__a drop__a_float"><img
-                                        src="img/basketWomen.png" alt="Tshirt"></a>
+                            <li class="drop__li"><a href="#" class="drop__a drop__a_left"><img
+                                        src="../src/assets/img/basketWomen.png" alt="Tshirt"></a>
                                 <div class="drop__div_middle">
                                     <h4 class="button__h4">Rebox Zane</h4>
                                     <i class="fa fa-star" aria-hidden="true"></i>
@@ -91,7 +91,8 @@
                             </li>
                             <li class="drop__li"><a href="#" class="buttons-shopCart__tipe drop__a_top">Checkout</a>
                             </li>
-                            <li class="drop__li"><a href="#" class="buttons-shopCart__tipe drop__a_bottom">Go to
+                            <li class="drop__li"><a href="shopping-cart.html"
+                                    class="buttons-shopCart__tipe drop__a_bottom">Go to
                                     cart</a>
                             </li>
                         </ul>
@@ -211,173 +212,122 @@
         <div class="center breadcrumbs__div">
             <h3 class="beradcrumb__h3">New Arrivals </h3>
             <ul class="breadcrum__ul">
-                <li class="breadcrum__list"><a href="" class="breadcrum__link">Home</a></li>
-                <li class="breadcrum__list"><a href="" class="breadcrum__link">Men</a></li>
+                <li class="breadcrum__list"><a href="#" class="breadcrum__link">Home</a></li>
+                <li class="breadcrum__list"><a href="#" class="breadcrum__link">Men</a></li>
                 <li class="breadcrum__list">New Arrivals</li>
             </ul>
         </div>
     </section>
-    <section class="category center">
-        <nav class="category__nav">
-            <details class="summary">
-                <summary class="summaryc">Category</summary>
-                <div class="drop__category">
-                    <div class="drop__col">
-                        <ul class="drop__ul">
-                            <li><a href="#" class="drop__a category__a">Accessories</a></li>
-                            <li><a href="#" class="drop__a category__a">Bags</a></li>
-                            <li><a href="#" class="drop__a category__a">Denim</a></li>
-                            <li><a href="#" class="drop__a category__a">Hoodies & Sweatshirts</a></li>
-                            <li><a href="#" class="drop__a category__a">Jackets & Coats</a></li>
-                            <li><a href="#" class="drop__a category__a">Pants</a></li>
-                            <li><a href="#" class="drop__a category__a">Polos</a></li>
-                            <li><a href="#" class="drop__a category__a">Shirts</a></li>
-                            <li><a href="#" class="drop__a category__a">Shoes</a></li>
-                            <li><a href="#" class="drop__a category__a">Shorts</a></li>
-                            <li><a href="#" class="drop__a category__a">Sweaters & Knits</a></li>
-                            <li><a href="#" class="drop__a category__a">T-Shirts</a></li>
-                            <li><a href="#" class="drop__a category__a">Tanks</a></li>
-                        </ul>
-                    </div>
+    <main class="shoppingCart center shoppingCart_margins">
+        <article class="shoppingCart__row shoppingCart__row_capital">
+            <p class="shoppingCart__column  shoppingCart__column_text-bold shoppingCart__column_large">Product Details
+            </p>
+            <p class="shoppingCart__column shoppingCart__column_text-bold">unite Price</p>
+            <p class="shoppingCart__column shoppingCart__column_text-bold">Quantity</p>
+            <p class="shoppingCart__column shoppingCart__column_text-bold">shipping</p>
+            <p class="shoppingCart__column shoppingCart__column_text-bold">Subtotal</p>
+            <p class="shoppingCart__column shoppingCart__column_text-bold">ACTION</p>
+        </article>
+        <article class="shoppingCart__row">
+            <div class="shoppingCart__column shoppingCart__column_text-decor shoppingCart__column_large"><a href="#"
+                    class="shoppingCart__Item"><img class="shoppingCart__img"
+                        src="../src/assets/img/hairedmaninParkSmall.png" alt="jacket"></a>
+                <div class="shoppingCart__Item-contentWrap">
+                    <h3 class="shoppingCart__content shoppingCart__column_padding">Mango People T-shirt</h3>
+                    <p class="shoppingCart__column_text-normal ">Color:&ensp;<span
+                            class="shoppingCart__column_text-decor shoppingCart__column_text-light">Red</span></p>
+                    <p class="shoppingCart__column_text-normal ">Size:&ensp;<span
+                            class="shoppingCart__column_text-decor shoppingCart__column_text-light">Xll</span></p>
                 </div>
-            </details>
-            <details class="summary">
-                <summary class="summaryc">brand</summary>
-                <div class="drop__category">
-                    <div class="drop__col">
-                        <ul class="drop__ul">
-                            <li><a href="#" class="drop__a category__a">Accessories</a></li>
-                            <li><a href="#" class="drop__a category__a">Bags</a></li>
-                            <li><a href="#" class="drop__a category__a">Denim</a></li>
-                            <li><a href="#" class="drop__a category__a">Hoodies & Sweatshirts</a></li>
-                            <li><a href="#" class="drop__a category__a">Jackets & Coats</a></li>
-                            <li><a href="#" class="drop__a category__a">Pants</a></li>
-                            <li><a href="#" class="drop__a category__a">Polos</a></li>
-                            <li><a href="#" class="drop__a category__a">Shirts</a></li>
-                            <li><a href="#" class="drop__a category__a">Shoes</a></li>
-                            <li><a href="#" class="drop__a category__a">Shorts</a></li>
-                            <li><a href="#" class="drop__a category__a">Sweaters & Knits</a></li>
-                            <li><a href="#" class="drop__a category__a">T-Shirts</a></li>
-                            <li><a href="#" class="drop__a category__a">Tanks</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </details>
-            <details class="summary">
-                <summary class="summaryc">designer</summary>
-                <div class="drop__category">
-                    <div class="drop__col">
-                        <ul class="drop__ul">
-                            <li><a href="#" class="drop__a category__a">Accessories</a></li>
-                            <li><a href="#" class="drop__a category__a">Bags</a></li>
-                            <li><a href="#" class="drop__a category__a">Denim</a></li>
-                            <li><a href="#" class="drop__a category__a">Hoodies & Sweatshirts</a></li>
-                            <li><a href="#" class="drop__a category__a">Jackets & Coats</a></li>
-                            <li><a href="#" class="drop__a category__a">Pants</a></li>
-                            <li><a href="#" class="drop__a category__a">Polos</a></li>
-                            <li><a href="#" class="drop__a category__a">Shirts</a></li>
-                            <li><a href="#" class="drop__a category__a">Shoes</a></li>
-                            <li><a href="#" class="drop__a category__a">Shorts</a></li>
-                            <li><a href="#" class="drop__a category__a">Sweaters & Knits</a></li>
-                            <li><a href="#" class="drop__a category__a">T-Shirts</a></li>
-                            <li><a href="#" class="drop__a category__a">Tanks</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </details>
-        </nav>
-        <section class="size">
-            <article class="trendingNow">
-                <p class="trendigNow__p">Trending now</p>
-                <ul class="trending__ul">
-                    <li class="trending__list"><a href="" class="trending__link">Bohemian</a></li>
-                    <li class="trending__list"><a href="" class="trending__link">Floral</a></li>
-                    <li class="trending__list"><a href="" class="trending__link">Lace</a></li>
-                    <li class="trending__list"><a href="" class="trending__link">Floral</a></li>
-                    <li class="trending__list"><a href="" class="trending__link">Lace</a></li>
-                    <li class="trending__list"><a href="" class="trending__link">Bohemian</a></li>
-                </ul>
-            </article>
-            <form class="sizeXL">
-                <fieldset class="sixeXL__fieldset">
-                    <legend class="sizeXL__legend">Size</legend>
-                    <div class="sizeXL__div">
-                        <p class="checkbox__p"><input type="checkbox" id="XXS"><label class="label__XL"
-                                for="XXS">XXS</label></p>
-                        <p class="checkbox__p"><input type="checkbox" id="XS"><label class="label__XL"
-                                for="XS">XS</label></p>
-                        <p class="checkbox__p"><input type="checkbox" id="S"><label class="label__XL" for="S">S</label>
-                        </p>
-                        <p class="checkbox__p"><input type="checkbox" id="M"><label class="label__XL" for="M">M</label>
-                        </p>
-                        <p class="checkbox__p"><input type="checkbox" id="L"><label class="label__XL" for="L">L</label>
-                        </p>
-                        <p class="checkbox__p"><input type="checkbox" id="XL"><label class="label__XL"
-                                for="XL">XL</label></p>
-                        <p class="checkbox__p"><input type="checkbox" id="XXL"><label class="label__XL"
-                                for="XXL">XXL</label></p>
-                    </div>
-                </fieldset>
-                <div class="range" oninput="result.value = prise.value;">
-                    <label class="label__range" for="prise">PRICE</label><br>
-                    <input type="range" id="prise" min="52" max="800" step="1" value="52">
-                    <div class="range__divforOutput">
-                        <p class="range__p">$<output class="output__range" id="result">0</output>
-                        </p>
-                        <p class="range__p">$<output class="output__range" id="resultTwo">400</output></p>
-                    </div>
-                </div>
-            </form>
-            <form class="sortShow__form">
-                <fieldset class="fieldset__sortShow">
-                    <button class="sortShow__button">Sort By</button>
-                    <details class="sortShow__details">
-                        <summary class="sortShow__summary">Name</summary>
-                    </details>
-                </fieldset>
-                <fieldset class="fieldset__sortShow">
-                    <button class="sortShow__button">Show</button>
-                    <details class="sortShow__details">
-                        <summary class="sortShow__summary">09</summary>
-                    </details>
-                </fieldset>
-            </form>
-            <section class="categoryMan__main" id="catalogProduct"></section>
-            <div class="pagination__product">
-                <ul class="ul__paginationProduct">
-                    <li class="list__paginationProduct"><a class="link__paginationProduct" href="#">&lt;</a></li>
-                    <li class="list__paginationProduct"><a class="link__paginationProduct active__paginationProductA"
-                            href="">1</a></li>
-                    <li class="list__paginationProduct"><a class="link__paginationProduct" href="#">2</a></li>
-                    <li class="list__paginationProduct"><a class="link__paginationProduct" href="#">3</a></li>
-                    <li class="list__paginationProduct"><a class="link__paginationProduct" href="#">4</a></li>
-                    <li class="list__paginationProduct"><a class="link__paginationProduct" href="#">5</a></li>
-                    <li class="list__paginationProduct"><a class="link__paginationProduct" href="#">6</a></li>
-                    <li class="list__paginationProduct"><a class="link__paginationProduct more" href="#">&hellip;</a>
-                    </li>
-                    <li class="list__paginationProduct"><a class="link__paginationProduct" href="#">20</a></li>
-                    <li class="list__paginationProduct"><a class="link__paginationProduct" href="#">&gt;</a></li>
-                </ul>
-                <button class="buttonAllprod button button_color-font">View All</button>
             </div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal">$150</div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal"><input type="number" min="0" value="2"
+                    class="shoppingCart__input"></div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal">FREE</div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal">$300</div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal"><a href="#"
+                    class="shoppingCart__cansel"><i class="fa fa-times-circle" aria-hidden="true"></i></a></div>
+        </article>
+        <article class="shoppingCart__row">
+            <div class="shoppingCart__column shoppingCart__column_large"><a href="#" class="shoppingCart__Item"><img
+                        class="shoppingCart__img" src="../src/assets/img/skinHeadSmall.png" alt="jacket"></a>
+                <div class="shoppingCart__Item-contentWrap">
+                    <h3 class="shoppingCart__content shoppingCart__column_padding">Mango People T-shirt</h3>
+                    <p class="shoppingCart__column_text-normal">Color:&ensp;<span
+                            class="shoppingCart__column_text-decor shoppingCart__column_text-light">Red</span></p>
+                    <p class="shoppingCart__column_text-normal">Size:&ensp;<span
+                            class="shoppingCart__column_text-decor shoppingCart__column_text-light">Xll</span></p>
+                </div>
+            </div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal">$150</div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal"><input type="number" min="0" value="2"
+                    class="shoppingCart__input"></div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal">FREE</div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal">$300</div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal"><a href="#"
+                    class="shoppingCart__cansel"><i class="fa fa-times-circle" aria-hidden="true"></i></a></div>
+        </article>
+        <article class="shoppingCart__row">
+            <div class="shoppingCart__column shoppingCart__column_large"><a href="#" class="shoppingCart__Item"><img
+                        class="shoppingCart__img" src="../src/assets/img/skinHeadInJaketSmall.png" alt="jacket"></a>
+                <div class="shoppingCart__Item-contentWrap">
+                    <h3 class="shoppingCart__content shoppingCart__column_padding">Mango People T-shirt</h3>
+                    <p class="shoppingCart__column_text-normal">Color:&ensp;<span
+                            class="shoppingCart__column_text-decor shoppingCart__column_text-light">Red</span></p>
+                    <p class="shoppingCart__column_text-normal">Size:&ensp;<span
+                            class="shoppingCart__column_text-decor shoppingCart__column_text-light">Xll</span></p>
+                </div>
+            </div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal">$150</div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal"><input type="number" min="0" value="2"
+                    class="shoppingCart__input"></div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal">FREE</div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal">$300</div>
+            <div class="shoppingCart__column shoppingCart__column_text-normal"><a href="#"
+                    class="shoppingCart__cansel"><i class="fa fa-times-circle" aria-hidden="true"></i></a></div>
+        </article>
+        <section class="shoppingCart__buttons buttons-shopCart">
+            <a class="buttons-shopCart__tipe">cLEAR SHOPPING CART</a>
+            <a class="buttons-shopCart__tipe">cONTINUE sHOPPING</a>
         </section>
-    </section>
-    <aside class="deliverySalesQuality__aside center">
-        <article class="deliverySalesQuality__article">
-            <p class="deliverySalesQuality__p">Free Delivery</p>
-            <p class="deliverySalesQuality__content">Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.</p>
-        </article>
-        <article class="deliverySalesQuality__article">
-            <p class="deliverySalesQuality__p">Sales & discounts</p>
-            <p class="deliverySalesQuality__content">Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.</p>
-        </article>
-        <article class="deliverySalesQuality__article">
-            <p class="deliverySalesQuality__p">Quality assurance</p>
-            <p class="deliverySalesQuality__content">Worldwide delivery on all. Authorit tively morph next-generation
-                innov tion with extensive models.</p>
-        </article>
+    </main>
+    <aside class="shopCart-shipping center">
+        <form class="shopCart-form">
+            <fieldset class="shopCart-fieldset">
+                <legend class="shopCart-fieldset__legend">Shipping Adress</legend>
+                <ul class="shopCart-fieldset__ul">
+                    <li class="shopCart-fieldset__list"><input type="text" placeholder=""
+                            class="shopCart-fieldset__input"></li>
+                    <li class="shopCart-fieldset__list"><input type="text" placeholder="State"
+                            class="shopCart-fieldset__input"></li>
+                    <li class="shopCart-fieldset__list"><input type="text" placeholder="Postcode/Zip"
+                            class="shopCart-fieldset__input"></li>
+                    <li class="shopCart-fieldset__list"><input type="submit" value="get a quote"
+                            class="shopCart-fieldset__input shopCart-fieldset__input_submit">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="shopCart-fieldset">
+                <legend class="shopCart-fieldset__legend">coupon discount</legend>
+                <ul class="shopCart-fieldset__ul">
+                    <li class="shopCart-fieldset__list">
+                        <label class="shopCart-fieldset__label shopCart-fieldset__label_positon">Enter your coupon code
+                            if you have one</label><br><br>
+                        <input type="text" placeholder="State" class="shopCart-fieldset__input">
+                    </li>
+                    <li class="shopCart-fieldset__list"><input type="submit" value="Apply coupon"
+                            class="shopCart-fieldset__input shopCart-fieldset__input_submit">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <div class="shopCart-shipping-button">
+            <p class="shopCart-shipping-button__p_small shopCart-shipping-button__p">Sub total&emsp;$900</p>
+            <p class="shopCart-shipping-button__p_big shopCart-shipping-button__p">GRAND TOTAL&ensp;<span
+                    class="shopCart-shipping__p_red">$900</span></p>
+            <button class="button shopCart-shipping-button__checkout button-mainType">proceed to
+                checkout</button>
+        </div>
     </aside>
     <footer class="footer">
         <aside class="subscribe__aside center">
@@ -417,7 +367,7 @@
         <section class="footerBrend__section center">
             <section class="footer___left">
                 <a href="index.html" class="logo">
-                    <img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="D">D</span>
+                    <img class="logo__img" src="../src/assets/img/logo.png" alt="logo">BRAN<span class="D">D</span>
                 </a>
                 <p class="footer__p">Objectively transition extensive data rather than cross functional solutions.
                     Monotonectally syndicate multidisciplinary materials before go&nbsp;forward benefits. Intrinsicly
@@ -475,7 +425,6 @@
             </ul>
         </section>
     </footer>
-    <script src="js/productCatalogmango.js"></script>
 </body>
 
 </html>

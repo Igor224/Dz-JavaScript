@@ -10,14 +10,14 @@ function createItem(id, name, price, img) {
             'MANGO PEOPLE T-SHIRT', 'MANGO PEOPLE T-SHIRT', 'MANGO PEOPLE T-SHIRT', 'MANGO PEOPLE T-SHIRT'];
             let prices = [52.00, 52.00, 52.00, 52.00, 52.00, 52.00, 52.00, 52.00];
             let imgs = [
-                'img/blackRoundTshirt.png', 
-                'img/redDress.png', 
-                'img/hairPignail.png', 
-                'img/flowersDress.png', 
-                'img/zebraDress.png', 
-                'img/manwithHat.png', 
-                'img/waitTrousers.png', 
-                'img/manInShorts.png'
+                '../src/assets/img/blackRoundTshirt.png', 
+                '../src/assets/img/redDress.png', 
+                '../src/assets/img/hairPignail.png', 
+                '../src/assets/img/flowersDress.png', 
+                '../src/assets/img/zebraDress.png', 
+                '../src/assets/img/manwithHat.png', 
+                '../src/assets/img/waitTrousers.png', 
+                '../src/assets/img/manInShorts.png'
             ]
 
             return names.map((name, index) => createItem(ids[index], name, prices[index], imgs[index]));
