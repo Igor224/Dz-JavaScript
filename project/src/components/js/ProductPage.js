@@ -9,14 +9,29 @@
                 template: settings.template,
                 init() {
                     this._render(); 
+                    this._handleActions();
                 },
                 _render() {
                     let str = ''; 
                     this.names.forEach((el,index) => { 
-                        str += this.template(this.imgs[index],this.names[index],this.prices[index]); 
+                        str += this.template(this.ids[index],this.imgs[index],this.names[index],this.prices[index]); 
                     });
                     document.querySelector(this.container).innerHTML += str; 
                 },
+                _handleActions() {
+                    this.container.addEventListener('click', evt => {
+                        if (evt.target.name == 'add') {
+                            let item = {
+                                name: evt.target.dataset.name,
+                                price: +evt.target.dataset.price,
+                                img: evt.target.dataset.img,
+                                amount: 1,
+                                id: evt.target.dataset.id
+                            }
+                        this.basket.add(item);
+                        }
+                    })
+                }
             }
             element.init();
 
@@ -24,7 +39,7 @@
         }
 
 
-        let catalogProduct = { 
+        const catalogProduct = { 
             ids: [1, 2, 3, 4, 5, 6, 7, 8, 9],
             names: ['MANGO PEOPLE T-SHIRT', 'MANGO PEOPLE T-SHIRT', 'MANGO PEOPLE T-SHIRT',
              'MANGO PEOPLE T-SHIRT', 'MANGO PEOPLE T-SHIRT', 'MANGO PEOPLE T-SHIRT', 'MANGO PEOPLE T-SHIRT',
@@ -42,16 +57,21 @@
                 '../src/assets/img/manBerdinBlueTsh.png'
             ],
             container: '#catalogProduct',
-            template(imgs,names,prices) {
+            template(ids,imgs,names,prices) {
                 return `<article class="mangoItems">
                             <img src="${imgs}" class="mangoItems__img" alt="product">
                             <div class="mangoItems__content"><a href="single_page.html" class="mangoItems__name">${names}</a>
                             <p class="mango__p">&#36;${prices}</p>
-                            <a href="#" class="mangoItems__add">Add to Cart</a>
+                            <a href="#" class="mangoItems__add
+                                name="add"
+                                data-name="${names}"
+                                data-img="${imgs}"
+                                data-price="${prices}"
+                                data-id="${ids}"">Add to Cart</a>
                             </div>
                         </article>
                        `
             }
         };
-    
+        
         let ProductPadgeGalaryGen = initNewApp(catalogProduct);

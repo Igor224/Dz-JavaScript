@@ -956,13 +956,13 @@ summary::after {
   background-color: #ffffff;
   border-radius: 5px;
   padding: 20px;
-  top: 36px;
+  top: 39px;
 }
 
 .drop-bascket {
   -ms-flex-preferred-size: 262px;
   flex-basis: 262px;
-  left: -11px;
+  left: -80px;
 }
 
 .drop__li {
