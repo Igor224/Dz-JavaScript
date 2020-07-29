@@ -241,10 +241,20 @@ summary::after {
 }
 
 .drop-bascket {
+    display: none;
     flex-basis: 262px;
     left: -80px;
+    z-index: 1;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    top: 39px;
 }
 
+.hide{
+    display: flex;
+}
 
 .drop__li {
     min-width: 228px;
